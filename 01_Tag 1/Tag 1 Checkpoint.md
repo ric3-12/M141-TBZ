@@ -50,3 +50,33 @@
 
 13. **Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?**
     * Standardisierte Abfragesprache SQL, flexible Abfragen via JOINs, ACID-Konformität, Normalisierung reduziert Redundanzen, breite Tool-Unterstützung
+
+14. **DB-Server starten und stoppen"**
+
+    ### XAMPP
+    ![Screenshot](/99_Media/image.png)
+
+    ### CMD
+    
+    ```bash
+    net start mysql
+    net stop mysql
+    ```
+
+15. **DB-Server prüfen**
+
+
+   ### Task-Manager
+   - `Strg + Shift + Esc` → Reiter **Details** → nach `mysqld.exe` suchen
+
+   ### Dienst-Manager
+   - `Win + R` → `services.msc` eingeben → Dienst **MySQL** suchen → Status muss **Wird ausgeführt** zeigen
+
+   ### mysql (CLI)
+   - Konsole öffnen → `mysql -u root -p` eingeben → wenn Verbindung klappt, läuft der Server
+
+   ### Workbench
+   - MySQL Workbench öffnen → auf deine Verbindung klicken → wenn sie sich öffnet ohne Fehler, läuft der Server
+
+   ### phpMyAdmin
+   - Browser öffnen → `http://localhost/phpmyadmin` → wenn die Startseite erscheint, läuft der Server
