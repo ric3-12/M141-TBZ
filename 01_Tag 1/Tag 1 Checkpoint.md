@@ -51,7 +51,7 @@
 13. **Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?**
     * Standardisierte Abfragesprache SQL, flexible Abfragen via JOINs, ACID-Konformität, Normalisierung reduziert Redundanzen, breite Tool-Unterstützung
 
-14. **DB-Server starten und stoppen"**
+14. **DB-Server starten und stoppen**
 
     ### XAMPP
     ![Screenshot](/99_Media/image.png)
