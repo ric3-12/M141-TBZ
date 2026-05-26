@@ -1,4 +1,4 @@
-![](../x_res/tbz_logo.png)
+
 
 
 
