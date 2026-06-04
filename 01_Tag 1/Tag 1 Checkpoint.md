@@ -1,6 +1,6 @@
 
 
-1.  Welches ist die heute am **häufigsten** verwendete Datenbank-Art?
+1.  **Welches ist die heute am häufigsten verwendete Datenbank-Art?**
 
     - [ ] Hierarchische Datenbank
 
@@ -10,7 +10,7 @@
 
     - [ ] Netzwerkförmige Datenbank
 
-2.  Welche **Komponenten** sind in einem DB-Server enthalten?
+2.  **Welche Komponenten sind in einem DB-Server enthalten?**
 
     - [x] 1 oder mehrere Datenbanken
 
@@ -20,7 +20,7 @@
 
     - [ ] Formulare, Reports und Abfragen
 
-3.  Bei welchen der folgenden **Fabrikate** handelt es sich um eine relationale Datenbank?
+3.  **Bei welchen der folgenden Fabrikate handelt es sich um eine relationale Datenbank?**
 
     - [x] Oracle
 
@@ -36,7 +36,7 @@
 
     - [x] PostgreSQL
 
-4.  Welches sind Beispiele für **Aufgaben** eines DB-Clients?
+4.  **Welches sind Beispiele für Aufgaben eines DB-Clients?**
 
     - [ ] speichert die eigentlichen Daten
 
@@ -46,7 +46,7 @@
 
     - [x] leitet die Befehle des Benutzers an den DB-Server weiter
 
-5.  Welches sind **Client-Komponenten** von MySQL?
+5.  **Welches sind Client-Komponenten von MySQL?**
 
     - [ ] mysqld
 
@@ -56,7 +56,7 @@
 
     - [x] phpMyAdmin
 
-6.  Wie heisst die **Server-Komponente** von MySQL?
+6.  **Wie heisst die Server-Komponente von MySQL?**
 
     - [ ] phpMyAdmin
 
@@ -66,23 +66,23 @@
 
     - [x] mysqld
 
-7.  Beschreiben Sie den Begriff Client/Server-Modell.
+7.  **Beschreiben Sie den Begriff Client/Server-Modell.**
 
     Der **Client** stellt die Benutzeroberfläche bereit und sendet Anfragen an den Server. Der **Server** verarbeitet diese Anfragen und liefert die Ergebnisse zurück. Mehrere Clients können gleichzeitig auf denselben Server zugreifen, ohne dass die Daten lokal gespeichert werden müssen.
 
-8.  Welche Vorteile hat die Client/Server-Architektur gegenüber einer Desktop-DB?
+8.  **Welche Vorteile hat die Client/Server-Architektur gegenüber einer Desktop-DB?**
 
     Mehrbenutzerbetrieb (viele Clients gleichzeitig), zentrale Datenhaltung, bessere Sicherheit durch zentrale Benutzerverwaltung, einfachere Backups und Wartung, Skalierbarkeit.
 
-9.  Wie werden die Daten in einer relationalen Datenbank abgespeichert?
+9.  **Wie werden die Daten in einer relationalen Datenbank abgespeichert?**
 
     In **Tabellen** mit Zeilen (Datensätze) und Spalten (Attribute). Tabellen werden über **Primär- und Fremdschlüssel** miteinander verknüpft.
 
-10.  Was sind die Vorteile, wenn ein DB-Server die **referentielle Datenintegrität** unterstützt?
+10.  **Was sind die Vorteile, wenn ein DB-Server die referentielle Datenintegrität unterstützt?**
 
     Es entstehen keine verwaisten Datensätze (z. B. Bestellungen ohne zugehörigen Kunden). Die Konsistenz der Daten wird automatisch vom Server erzwungen, fehlerhafte oder inkonsistente Einträge werden auf Datenbankebene verhindert.
 
-11.  Welches sind die 4 Gruppen von **NoSQL**-Datenbanken, die zurzeit relevant sind?
+11.  **Welches sind die 4 Gruppen von NoSQL-Datenbanken, die zurzeit relevant sind?**
 
     | Gruppe | Beispiel |
     |--------|---------|
@@ -91,15 +91,15 @@
     | **Column-Family-Stores** | Cassandra |
     | **Graph-Datenbanken** | Neo4j |
 
-12.  Was bedeutet **DBaaS**? Erklären Sie anhand eines Beispiels.
+12.  **Was bedeutet DBaaS? Erklären Sie anhand eines Beispiels.**
 
     **Database as a Service** – die Datenbank wird als Cloud-Dienst bezogen. Der Anbieter übernimmt Betrieb, Updates und Backups. Beispiel: **Amazon RDS** stellt eine MySQL-Datenbank in der Cloud bereit, ohne dass man selbst einen Server installieren oder warten muss.
 
-13.  Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?
+13.  **Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?**
 
     Standardisierte Abfragesprache **SQL**, flexible Abfragen via JOINs, **ACID-Konformität** (Datenkonsistenz), Normalisierung reduziert Redundanzen, breite Tool- und Treiber-Unterstützung.
 
-14.  DB-Server starten und stoppen
+14.  **DB-Server starten und stoppen**
 
     *Via XAMPP Control Panel:* Neben MySQL auf **Start** bzw. **Stop** klicken.
 
@@ -111,7 +111,7 @@
 
     *Via MySQL Workbench:* Unter **Server** → **Startup/Shutdown** den Server starten oder stoppen (nur wenn MySQL als Windows-Dienst läuft).
 
-15.  DB-Server prüfen
+15.  **DB-Server prüfen**
 
     | Methode | Vorgehen |
     |---------|----------|
