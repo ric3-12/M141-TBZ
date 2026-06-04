@@ -1,82 +1,122 @@
 
 
-# Einführung, DB-Engines, XAMPP, Workbench
+1.  Welches ist die heute am **häufigsten** verwendete Datenbank-Art?
 
-1. **Welches ist die heute am häufigsten verwendete Datenbank-Art?**
-   * Relationale Datenbank – dominiert den Markt seit Jahrzehnten
+    - [ ] Hierarchische Datenbank
 
-2. **Welche Komponenten sind in einem DB-Server enthalten?**
-   * 1 oder mehrere Datenbanken – die eigentlichen Datenspeicher
-   * Datenbank-Management-System (DBMS) – verwaltet und steuert den Zugriff auf die Daten
+    - [x] Relationale Datenbank
 
-3. **Bei welchen der folgenden Fabrikate handelt es sich um eine relationale Datenbank?**
-   * Oracle – kommerzielles RDBMS
-   * MySQL – weit verbreitet, Open Source
-   * MariaDB – MySQL-Fork, Open Source
-   * MS Access – Desktop-RDBMS von Microsoft
-   * PostgreSQL – leistungsstarkes Open Source RDBMS
+    - [ ] Objektorientierte Datenbank
 
-4. **Welches sind Beispiele für Aufgaben eines DB-Clients?**
-   * stellt dem Benutzer ein User-Interface für den Datenzugriff zur Verfügung
-   * leitet die Befehle des Benutzers an den DB-Server weiter
+    - [ ] Netzwerkförmige Datenbank
 
-5. **Welches sind Client-Komponenten von MySQL?**
-   * mysql – Kommandozeilen-Client
-   * phpMyAdmin – webbasierter Client
+2.  Welche **Komponenten** sind in einem DB-Server enthalten?
 
-6. **Wie heisst die Server-Komponente von MySQL?**
-   * mysqld – der eigentliche Datenbankdaemon, läuft im Hintergrund
+    - [x] 1 oder mehrere Datenbanken
 
-7. **Beschreiben Sie den Begriff Client/Server-Modell.**
-   * Client stellt Benutzeroberfläche bereit und sendet Anfragen an den Server; der Server verarbeitet diese und liefert die Daten zurück. Mehrere Clients können gleichzeitig auf denselben Server zugreifen.
+    - [ ] 1 oder mehrere Datenbank-Anwendungen
 
-8. **Welche Vorteile hat die Client/Server-Architektur gegenüber einer Desktop-DB?**
-   * Mehrbenutzerbetrieb, zentrale Datenhaltung, bessere Sicherheit durch zentrale Benutzerverwaltung, Skalierbarkeit
+    - [x] Datenbank-Management-System (DBMS)
 
-9. **Wie werden die Daten in einer relationalen Datenbank abgespeichert?**
-   * In Tabellen mit Zeilen (Datensätze) und Spalten (Attribute), verknüpft über Primär- und Fremdschlüssel
+    - [ ] Formulare, Reports und Abfragen
 
-10. **Was sind die Vorteile, wenn ein DB-Server die referentielle Datenintegrität unterstützt?**
-    * Keine verwaisten Datensätze, Konsistenz wird automatisch vom Server erzwungen, fehlerhafte Daten werden auf DB-Ebene verhindert
+3.  Bei welchen der folgenden **Fabrikate** handelt es sich um eine relationale Datenbank?
 
-11. **Welches sind die 4 Gruppen von NoSQL-Datenbanken?**
-    * Key-Value-Stores (z. B. Redis)
-    * Document Stores (z. B. MongoDB)
-    * Column-Family-Stores (z. B. Cassandra)
-    * Graph-Datenbanken (z. B. Neo4j)
+    - [x] Oracle
 
-12. **Was bedeutet DBaaS?**
-    * Database as a Service – Datenbank wird als Cloud-Dienst bezogen, z. B. Amazon RDS. Anbieter übernimmt Betrieb, Updates und Backups.
+    - [ ] Couch-DB
 
-13. **Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?**
-    * Standardisierte Abfragesprache SQL, flexible Abfragen via JOINs, ACID-Konformität, Normalisierung reduziert Redundanzen, breite Tool-Unterstützung
+    - [x] MySQL
 
-14. **DB-Server starten und stoppen**
+    - [x] MariaDB
 
-    ### XAMPP
-    ![Screenshot](/99_Media/image.png)
+    - [ ] Mongo-DB
 
-    ### CMD
-    
+    - [x] MS Access
+
+    - [x] PostgreSQL
+
+4.  Welches sind Beispiele für **Aufgaben** eines DB-Clients?
+
+    - [ ] speichert die eigentlichen Daten
+
+    - [x] stellt dem Benutzer ein User-Interface für den Datenzugriff zur Verfügung
+
+    - [ ] verwaltet Benutzer und Passworte und gewährleistet damit die Sicherheit der Datenbank
+
+    - [x] leitet die Befehle des Benutzers an den DB-Server weiter
+
+5.  Welches sind **Client-Komponenten** von MySQL?
+
+    - [ ] mysqld
+
+    - [ ] my.ini
+
+    - [x] mysql
+
+    - [x] phpMyAdmin
+
+6.  Wie heisst die **Server-Komponente** von MySQL?
+
+    - [ ] phpMyAdmin
+
+    - [ ] Workbench
+
+    - [ ] mysql
+
+    - [x] mysqld
+
+7.  Beschreiben Sie den Begriff Client/Server-Modell.
+
+    Der **Client** stellt die Benutzeroberfläche bereit und sendet Anfragen an den Server. Der **Server** verarbeitet diese Anfragen und liefert die Ergebnisse zurück. Mehrere Clients können gleichzeitig auf denselben Server zugreifen, ohne dass die Daten lokal gespeichert werden müssen.
+
+8.  Welche Vorteile hat die Client/Server-Architektur gegenüber einer Desktop-DB?
+
+    Mehrbenutzerbetrieb (viele Clients gleichzeitig), zentrale Datenhaltung, bessere Sicherheit durch zentrale Benutzerverwaltung, einfachere Backups und Wartung, Skalierbarkeit.
+
+9.  Wie werden die Daten in einer relationalen Datenbank abgespeichert?
+
+    In **Tabellen** mit Zeilen (Datensätze) und Spalten (Attribute). Tabellen werden über **Primär- und Fremdschlüssel** miteinander verknüpft.
+
+10.  Was sind die Vorteile, wenn ein DB-Server die **referentielle Datenintegrität** unterstützt?
+
+    Es entstehen keine verwaisten Datensätze (z. B. Bestellungen ohne zugehörigen Kunden). Die Konsistenz der Daten wird automatisch vom Server erzwungen, fehlerhafte oder inkonsistente Einträge werden auf Datenbankebene verhindert.
+
+11.  Welches sind die 4 Gruppen von **NoSQL**-Datenbanken, die zurzeit relevant sind?
+
+    | Gruppe | Beispiel |
+    |--------|---------|
+    | **Key-Value-Stores** | Redis |
+    | **Document Stores** | MongoDB |
+    | **Column-Family-Stores** | Cassandra |
+    | **Graph-Datenbanken** | Neo4j |
+
+12.  Was bedeutet **DBaaS**? Erklären Sie anhand eines Beispiels.
+
+    **Database as a Service** – die Datenbank wird als Cloud-Dienst bezogen. Der Anbieter übernimmt Betrieb, Updates und Backups. Beispiel: **Amazon RDS** stellt eine MySQL-Datenbank in der Cloud bereit, ohne dass man selbst einen Server installieren oder warten muss.
+
+13.  Was sind die Vorteile eines RDBMS gegenüber anderen DB-Modellen?
+
+    Standardisierte Abfragesprache **SQL**, flexible Abfragen via JOINs, **ACID-Konformität** (Datenkonsistenz), Normalisierung reduziert Redundanzen, breite Tool- und Treiber-Unterstützung.
+
+14.  DB-Server starten und stoppen
+
+    *Via XAMPP Control Panel:* Neben MySQL auf **Start** bzw. **Stop** klicken.
+
+    *Via Konsole (CMD):*
     ```bash
     net start mysql
     net stop mysql
     ```
 
-15. **DB-Server prüfen**
+    *Via MySQL Workbench:* Unter **Server** → **Startup/Shutdown** den Server starten oder stoppen (nur wenn MySQL als Windows-Dienst läuft).
 
+15.  DB-Server prüfen
 
-   ### Task-Manager
-   - `Strg + Shift + Esc` → Reiter **Details** → nach `mysqld.exe` suchen
-
-   ### Dienst-Manager
-   - `Win + R` → `services.msc` eingeben → Dienst **MySQL** suchen → Status muss **Wird ausgeführt** zeigen
-
-   ### mysql (CLI)
-   - Konsole öffnen → `mysql -u root -p` eingeben → wenn Verbindung klappt, läuft der Server
-
-   ### Workbench
-   - MySQL Workbench öffnen → auf deine Verbindung klicken → wenn sie sich öffnet ohne Fehler, läuft der Server
-
-   ### phpMyAdmin
-   - Browser öffnen → `http://localhost/phpmyadmin` → wenn die Startseite erscheint, läuft der Server
+    | Methode | Vorgehen |
+    |---------|----------|
+    | **Task-Manager** | `Strg + Shift + Esc` → Reiter **Details** → nach `mysqld.exe` suchen |
+    | **Dienst-Manager** | `Win + R` → `services.msc` → Dienst **MySQL** suchen → Status muss **Wird ausgeführt** zeigen |
+    | **mysql (CLI)** | Konsole öffnen → `mysql -u root -p` → wenn Verbindung klappt, läuft der Server |
+    | **Workbench** | Verbindung öffnen → wenn sie sich ohne Fehler öffnet, läuft der Server |
+    | **phpMyAdmin** | Browser → `http://localhost/phpmyadmin` → wenn Startseite erscheint, läuft der Server |
